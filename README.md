@@ -1,8 +1,7 @@
 # Импорт exel в mysql
 
 ##Требования
-> [!WARNING]
-> Важно! Добавить в app класс [PHPExcel]: https://github.com/PHPOffice/PHPExcel
+> Важно! Добавить в app класс [PHPExcel](https://github.com/PHPOffice/PHPExcel)
 
 ##Принцип работы
 
