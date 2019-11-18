@@ -23,9 +23,13 @@ class Model{
    }
 
    function query($request){
-        debug_print_backtrace();
         $sql = $this->pdo->prepare($request);
         $sql->execute();
+        return $sql;
+   }
+
+   function get($request){
+        $sql = $this->query($request);
         while($row = $sql->fetch(\PDO::FETCH_ASSOC)){
             $result[] = $row;
         }

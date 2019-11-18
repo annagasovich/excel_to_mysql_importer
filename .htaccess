@@ -1,5 +1,6 @@
 RewriteEngine on
 
+RewriteRule ^$ /users/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule . /public/index.php [L]
+RewriteRule ./ /public/index.php [L]
