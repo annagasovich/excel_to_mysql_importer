@@ -8,12 +8,12 @@ class Model{
 
 	function __construct() {
 
-	global $config;
-
-	$host = $config['db']['host'];
-    $db   = $config['db']['dbname'];
-    $user = $config['db']['user'];
-    $pass = $config['db']['pass'];
+	global $sqlconnetor;
+  $config = $sqlconnetor[PROJECT];
+    $host = $config['server'];
+    $db   = $config['database'];
+    $user = $config['user'];
+    $pass = $config['word'];
     $charset = 'utf8';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
